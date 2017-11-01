@@ -8,7 +8,6 @@ URL:		https://github.com/polibacorse
 Source0:	https://github.com/polibacorse/%{name}/archive/%{name}-%{version}.tar.gz
 
 BuildArch:	noarch
-BuildRequires:	plymouth, plymouth-plugin-two-step
 Requires:	plymouth, plymouth-plugin-two-step
 
 %description
@@ -24,6 +23,8 @@ mkdir -p $RPM_BUILD_ROOT${_datadir}/plymouth/themes/polibacorse
 for i in * ; do
 	install -p -m 644 $i $RPM_BUILD_ROOT${_datadir}/plymouth/themes/polibacorse
 done
+
+plymouth-set-default-theme -R polibacorse
 
 %files
 %license LICENSE
