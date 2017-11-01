@@ -1,0 +1,13 @@
+[Plymouth Theme]
+Name=polibacorse
+Description=A theme that features the official logo of Poliba Corse with a progress bar underneath.
+ModuleName=two-step
+
+[two-step]
+ImageDir=/usr/share/plymouth/themes/polibacorse
+HorizontalAlignment=.5
+VerticalAlignment=.5
+Transition=none
+TransitionDuration=0.0
+BackgroundStartColor=0x202020
+BackgroundEndColor=0x202020
