@@ -9,6 +9,7 @@ Source0:	https://github.com/polibacorse/%{name}/archive/%{name}-%{version}.tar.g
 
 BuildArch:	noarch
 Requires:	plymouth, plymouth-plugin-two-step
+BuildRequires:	plymouth, plymouth-plugin-two-step, plymouth-scripts
 
 %description
 The official logo of Poliba Corse as boot splash, ported to Plymouth as a theme.
