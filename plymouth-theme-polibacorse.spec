@@ -25,8 +25,6 @@ for i in * ; do
 	install -p -m 644 $i $RPM_BUILD_ROOT${_datadir}/plymouth/themes/polibacorse
 done
 
-plymouth-set-default-theme -R polibacorse
-
 %files
 %license LICENSE
 ${_datadir}/plymouth/themes/polibacorse/
