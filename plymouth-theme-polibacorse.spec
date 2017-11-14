@@ -1,7 +1,7 @@
 %define themename polibacorse
 %define set_theme %{_sbindir}/plymouth-set-default-theme
 Name:           plymouth-theme-%{themename}
-Version:        0.5
+Version:        0.6
 Release:        10%{?dist}
 Summary:        Plymouth Official Theme for Poliba Corse
 
@@ -50,7 +50,8 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(-,root,root,-)
-%doc README
+%doc README.md
+%license LICENSE
 %dir %{_datadir}/plymouth/themes/%{themename}
 %{_datadir}/plymouth/themes/%{themename}/*.png
 %{_datadir}/plymouth/themes/%{themename}/%{themename}.plymouth
